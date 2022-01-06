@@ -8,5 +8,5 @@ eureka:
     hostname: localhost
     
  microservice:
-  flight-service:
-    get-scheduled-flight-by-id: http://FLIGHT-SERVICE/api/v1/
+   flight-service:
+     get-scheduled-flight-by-id: http://FLIGHT-SERVICE/api/v1/
