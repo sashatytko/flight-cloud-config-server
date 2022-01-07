@@ -28,8 +28,7 @@ spring:
         spring:
           json:
             trusted:
-              packages:
-                - common.dto.payment
+              packages: *
               
           
 kafka:
