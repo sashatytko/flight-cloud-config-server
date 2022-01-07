@@ -22,7 +22,7 @@ spring:
     consumer:
       bootstrap-servers: localhost:9092
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
-      key-serializer: org.apache.kafka.common.serialization.StringDeserializer
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       auto-offset-reset: earliest
       properties:
         spring:
