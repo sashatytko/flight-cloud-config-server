@@ -10,3 +10,28 @@ eureka:
 microservice:
   flight-service:
     get-scheduled-flight-by-id: http://FLIGHT-SERVICE/api/v1/
+    
+
+spring:
+  kafka:
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer  
+    consumer:
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      enable-auto-commit: false
+      auto-offset-reset: earliest
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: com.asb.example
+              
+          
+kafka:
+  request:
+    topic: order-get-balance
+    reply:
+      topic: order-reply-balance
+  group:
+    id: order-balance
+  
