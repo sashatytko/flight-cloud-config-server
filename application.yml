@@ -29,8 +29,8 @@ spring:
 kafka:
   request:
     topic: order-get-balance
-    reply:
-      topic: order-reply-balance
+  reply:
+    topic: order-reply-balance
   group:
     id: order-balance
   
