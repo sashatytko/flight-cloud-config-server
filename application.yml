@@ -19,7 +19,7 @@ spring:
       key-serializer: org.springframework.kafka.support.serializer.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer  
     consumer:
-      key-serializer: org.springframework.kafka.support.serializer.StringSerializer
+      key-deserializer: org.springframework.kafka.support.serializer.StringSerializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       auto-offset-reset: earliest
       properties:
