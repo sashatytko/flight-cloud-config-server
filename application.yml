@@ -38,4 +38,3 @@ kafka:
     topic: order-reply-balance
   group:
     id: order-balance
-  
