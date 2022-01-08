@@ -9,7 +9,7 @@ eureka:
     
 microservice:
   flight-service:
-    get-scheduled-flight-by-id: http://FLIGHT-SERVICE/api/v1/
+    get-scheduled-flight-by-id: http://FLIGHT-SERVICE/api/v1/scheduled-flight/
     
 
 spring:
